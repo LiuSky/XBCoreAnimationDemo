@@ -15,7 +15,15 @@ final class ViewController: UITableViewController {
     /// 数据
     private lazy var array = ["图层",
                               "寄宿图",
-                              "图层几何学",]
+                              "图层几何学",
+                              "CAShapeLayer",
+                              "CATextLayer",
+                              "CATransformLayer",
+                              "CAGradientLayer",
+                              "CAReplicatorLayer",
+                              "CAScrollLayer",
+                              "CATiledLayer",
+                              "CAEmitterLayer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +55,22 @@ final class ViewController: UITableViewController {
             vc = LayerContentsViewController()
         case 2:
             vc = Geometry()
+        case 3:
+            vc = ShapeLayer()
+        case 4:
+            vc = TextLayer()
+        case 5:
+            vc = TransformLayer()
+        case 6:
+            vc = GradientLayer()
+        case 7:
+            vc = ReplicatorLayer()
+        case 8:
+            vc = ScrollLayer()
+        case 9:
+            vc = TiledLayer()
+        case 10:
+            vc = EmitterLayer()
         default:
             break
         }

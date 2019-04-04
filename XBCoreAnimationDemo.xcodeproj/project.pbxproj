@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		330A519922548192009AF5AF /* LayerContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A519822548192009AF5AF /* LayerContents.swift */; };
 		330A519B22548B44009AF5AF /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A519A22548B44009AF5AF /* Geometry.swift */; };
+		330A519D22549C72009AF5AF /* ShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A519C22549C72009AF5AF /* ShapeLayer.swift */; };
+		330A519F22549E9E009AF5AF /* TextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A519E22549E9E009AF5AF /* TextLayer.swift */; };
+		330A51A12254AA6E009AF5AF /* TransformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A51A02254AA6E009AF5AF /* TransformLayer.swift */; };
+		330A51A32254C07D009AF5AF /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A51A22254C07D009AF5AF /* GradientLayer.swift */; };
+		330A51A52254C2EA009AF5AF /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A51A42254C2EA009AF5AF /* ReplicatorLayer.swift */; };
+		333805AF2255965100C00452 /* ScrollLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333805AE2255965100C00452 /* ScrollLayer.swift */; };
+		333805B1225599BC00C00452 /* TiledLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333805B0225599BC00C00452 /* TiledLayer.swift */; };
+		333805B32255A31B00C00452 /* EmitterLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333805B22255A31B00C00452 /* EmitterLayer.swift */; };
 		33417CA52254535D0091A40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33417CA42254535D0091A40C /* AppDelegate.swift */; };
 		33417CA72254535D0091A40C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33417CA62254535D0091A40C /* ViewController.swift */; };
 		33417CAA2254535D0091A40C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33417CA82254535D0091A40C /* Main.storyboard */; };
@@ -20,6 +28,14 @@
 /* Begin PBXFileReference section */
 		330A519822548192009AF5AF /* LayerContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerContents.swift; sourceTree = "<group>"; };
 		330A519A22548B44009AF5AF /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		330A519C22549C72009AF5AF /* ShapeLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLayer.swift; sourceTree = "<group>"; };
+		330A519E22549E9E009AF5AF /* TextLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLayer.swift; sourceTree = "<group>"; };
+		330A51A02254AA6E009AF5AF /* TransformLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformLayer.swift; sourceTree = "<group>"; };
+		330A51A22254C07D009AF5AF /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		330A51A42254C2EA009AF5AF /* ReplicatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
+		333805AE2255965100C00452 /* ScrollLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollLayer.swift; sourceTree = "<group>"; };
+		333805B0225599BC00C00452 /* TiledLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiledLayer.swift; sourceTree = "<group>"; };
+		333805B22255A31B00C00452 /* EmitterLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterLayer.swift; sourceTree = "<group>"; };
 		33417CA12254535D0091A40C /* XBCoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBCoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33417CA42254535D0091A40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33417CA62254535D0091A40C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +93,14 @@
 				33417CB7225455430091A40C /* LayerViewController.swift */,
 				330A519822548192009AF5AF /* LayerContents.swift */,
 				330A519A22548B44009AF5AF /* Geometry.swift */,
+				330A519C22549C72009AF5AF /* ShapeLayer.swift */,
+				330A519E22549E9E009AF5AF /* TextLayer.swift */,
+				330A51A02254AA6E009AF5AF /* TransformLayer.swift */,
+				330A51A22254C07D009AF5AF /* GradientLayer.swift */,
+				330A51A42254C2EA009AF5AF /* ReplicatorLayer.swift */,
+				333805AE2255965100C00452 /* ScrollLayer.swift */,
+				333805B0225599BC00C00452 /* TiledLayer.swift */,
+				333805B22255A31B00C00452 /* EmitterLayer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -152,11 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330A51A12254AA6E009AF5AF /* TransformLayer.swift in Sources */,
 				33417CA72254535D0091A40C /* ViewController.swift in Sources */,
+				333805B1225599BC00C00452 /* TiledLayer.swift in Sources */,
+				330A51A32254C07D009AF5AF /* GradientLayer.swift in Sources */,
+				333805B32255A31B00C00452 /* EmitterLayer.swift in Sources */,
+				330A519D22549C72009AF5AF /* ShapeLayer.swift in Sources */,
 				33417CA52254535D0091A40C /* AppDelegate.swift in Sources */,
 				330A519922548192009AF5AF /* LayerContents.swift in Sources */,
+				330A51A52254C2EA009AF5AF /* ReplicatorLayer.swift in Sources */,
 				33417CB8225455430091A40C /* LayerViewController.swift in Sources */,
 				330A519B22548B44009AF5AF /* Geometry.swift in Sources */,
+				333805AF2255965100C00452 /* ScrollLayer.swift in Sources */,
+				330A519F22549E9E009AF5AF /* TextLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
